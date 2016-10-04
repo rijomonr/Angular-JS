@@ -1,0 +1,16 @@
+<script type="text/javascript" src='https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular.min.js'></script>
+<script type="text/javascript" src='https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular-route.js'></script>
+<script type="text/javascript" src='app.js'></script>
+<script type="text/javascript" src='controller.js'></script> 
+<body ng-app="myApp">
+	<div id="navigation">
+		<a href="#/home" ng-class="{activeSmall:part == 'home'}" >Home</a>
+		<a href="#/about" ng-class="{activeSmall:part == 'about'}" >About</a>
+		<a href="#/contact" ng-class="{activeSmall:part == 'contact'}">Contact</a>
+	</div>
+	<div ng-view ng-show="true"></div>
+</body>
+<style>
+.activeSmall {
+  color:#c33c3a; }
+</style>
